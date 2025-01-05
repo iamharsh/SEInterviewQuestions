@@ -1,0 +1,16 @@
+When considering encryption for batch files, you have a few options. Here are some common types:
+
+1. **AES (Advanced Encryption Standard)**: A widely used symmetric encryption algorithm that is secure and efficient. You can use tools like OpenSSL or PowerShell to implement AES in your scripts.
+
+2. **RSA (Rivest-Shamir-Adleman)**: An asymmetric encryption method that is often used for secure data transmission. While not typically used directly in batch files, it can be used to encrypt small amounts of data.
+
+3. **DES (Data Encryption Standard)**: An older symmetric encryption standard that is less secure than AES, but might be suitable for less sensitive data.
+
+4. **3DES (Triple DES)**: An improvement over DES, applying the algorithm three times to increase security. 
+
+5. **PGP (Pretty Good Privacy)**: Often used for encrypting files and emails, PGP can also be invoked from a batch file to encrypt or decrypt data.
+
+6. **Custom Encryption**: You can also create a simple custom encryption scheme using basic algorithms (like XOR) for non-sensitive data, but this is generally not recommended for serious use.
+
+To implement encryption in batch files, you might need to call external tools or scripts written in languages like PowerShell or Python, as batch files themselves have limited built-in encryption capabilities.
+
