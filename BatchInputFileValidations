@@ -1,0 +1,51 @@
+Here’s a list of common validations for a batch input file, focusing on elements like delimiters and date-time formats:
+
+### 1. **Delimiter Validation**
+   - **Correct Delimiter**: Ensure the specified delimiter (e.g., comma, tab, pipe) is consistent throughout the file.
+   - **No Trailing Delimiters**: Check for any trailing delimiters at the end of lines that could indicate missing values.
+   - **Field Count Consistency**: Verify that each line contains the same number of fields as defined by the delimiter.
+
+### 2. **Date-Time Format Validation**
+   - **Correct Format**: Ensure date-time values conform to the expected format (e.g., `YYYY-MM-DD`, `DD/MM/YYYY`).
+   - **Valid Dates**: Check that date values represent valid dates (e.g., not February 30).
+   - **Time Zone Awareness**: If applicable, ensure time zones are correctly specified and understood.
+
+### 3. **Numeric Format Validation**
+   - **Numeric Values**: Confirm that numeric fields contain valid numbers, with no extraneous characters (like letters or symbols).
+   - **Decimal and Thousands Separators**: Validate that decimal points and thousands separators are correctly used (e.g., `1,000.00` vs. `1000,00`).
+
+### 4. **Text Field Validation**
+   - **Length Check**: Ensure text fields do not exceed the maximum allowed length.
+   - **Special Characters**: Validate that special characters are handled correctly (e.g., quotes, commas) and properly escaped if necessary.
+
+### 5. **Mandatory Fields**
+   - **Required Values**: Ensure all mandatory fields are populated and not left blank.
+
+### 6. **Data Type Validation**
+   - **Type Checks**: Confirm that each field contains data of the expected type (e.g., strings, integers, booleans).
+
+### 7. **Range Validation**
+   - **Value Ranges**: Check that numeric fields fall within specified minimum and maximum values.
+
+### 8. **File Encoding**
+   - **Encoding Consistency**: Ensure the file is saved in the correct encoding format (e.g., UTF-8) and handle BOM (Byte Order Mark) if present.
+
+### 9. **Line Breaks**
+   - **Consistent Line Breaks**: Ensure consistent line endings (LF, CRLF) across the file.
+
+### 10. **Comment Handling**
+   - **Comment Lines**: If applicable, validate that comment lines are formatted correctly and ignored in processing.
+
+### 11. **Whitespace Trimming**
+   - **Leading/Trailing Spaces**: Check for and remove unnecessary leading or trailing spaces in each field.
+
+### 12. **Custom Business Rules**
+   - **Domain-Specific Validations**: Implement any additional rules specific to your application's logic (e.g., unique identifiers).
+
+### 13. **Header Row Validation**
+   - **Header Consistency**: If a header row is present, validate that it contains the correct column names and order.
+
+### 14. **File Size Limits**
+   - **File Size Check**: Validate that the input file does not exceed specified size limits to prevent performance issues.
+
+Implementing these validations can help ensure the integrity and correctness of data in batch input files.
